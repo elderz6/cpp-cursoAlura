@@ -1,3 +1,3 @@
 #pragma once
 #include<string>
-bool containsLetter(char letter, std::string secretWord);
+bool containsLetter(char& letter, const std::string& secretWord);

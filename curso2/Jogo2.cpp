@@ -11,9 +11,9 @@
 #include "./interfaces/printChar.hpp"
 
 int main(){
-    std::string secretWord = readFile();;
-    std::map<char, bool> correctPositions;
-    std::map<char, bool> mistakes;
+    static const std::string secretWord = readFile();;
+    static std::map<char, bool> correctPositions;
+    static std::map<char, bool> mistakes;
     bool notFullWord = true;
     bool notMaxTries = true;
     int tries = 0;
